@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Project-Flamingo",
+    "slug": "Project-Flamingo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Project-Flamingo"
+}
