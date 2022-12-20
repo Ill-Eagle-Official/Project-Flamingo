@@ -32,10 +32,10 @@ const styles = StyleSheet.create({
   },
 
   title: {
-      fontSize: 30,
+      fontSize: 20,
       fontWeight: 'bold',
       color: 'white',
-      marginBottom: 50
+      marginBottom: 20
   },
 
   loginButton: {
