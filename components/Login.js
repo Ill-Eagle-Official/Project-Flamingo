@@ -23,3 +23,54 @@ const LoginScreen = ({ navigation }) => {
 
 }
 
+const styles = StyleSheet.create({
+  container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#4169e1'
+  },
+
+  title: {
+      fontSize: 30,
+      fontWeight: 'bold',
+      color: 'white',
+      marginBottom: 50
+  },
+
+  loginButton: {
+      backgroundColor: 'white',
+      width: 200,
+      height: 50,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 10,
+      marginBottom: 20
+  },
+
+  loginText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: '#4169e1'
+  },
+
+  signupButton: {
+      backgroundColor: '#4169e1',
+      width: 200,
+      height: 50,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 10,
+      borderWidth: 2,
+      borderColor: 'white'
+  },
+
+  signupText: {
+      fontSize: 20,
+      fontWeight: 'bold',
+      color: 'white'
+  }
+});
+
+export default LoginScreen;
+
