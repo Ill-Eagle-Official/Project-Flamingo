@@ -10,7 +10,7 @@ import {
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Flamingo!</Text>
+      <Text style={styles.title}>Hello fella!</Text>
       <Text style={styles.subtitle}>Which site are you at today?</Text>
 
       <ScrollView style={styles.scrollView}>
@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
 
   scrollView: {
     width: "100%",
-  }
-
+  },
 });
+
+export default HomeScreen;
