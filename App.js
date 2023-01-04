@@ -3,13 +3,16 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import LoginScreen from "./components/Login";
 import HomeScreen from "./components/Home";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <LoginScreen />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <LoginScreen />
+        <StatusBar style="auto" />
+      </View>
+    </NavigationContainer>
   );
 }
 
