@@ -1,13 +1,35 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  TextInput,
+} from "react-native";
 
 const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Flamingo!</Text>
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.input}
+          placeholder="Username"
+          placeholderTextColor="white"
+        />
+      </View>
+
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.input}
+          placeholder="Password"
+          placeholderTextColor="white"
+        />
+      </View>
+
       <TouchableOpacity
         style={styles.loginButton}
-        onPress={() => navigation.navigate("Home")}
+        onPress={() => console.log("Login button pressed")}
       >
         <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
@@ -30,10 +52,19 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: "bold",
     color: "white",
     marginBottom: 20,
+  },
+
+  inputView: {
+    backgroundColor: "white",
+    borderRadius: 10,
+    width: "70%",
+    height: 40,
+    marginBottom: 20,
+    alignItems: "center",
   },
 
   loginButton: {
