@@ -15,7 +15,7 @@ const LoginScreen = ({ navigation }) => {
         <TextInput
           style={styles.input}
           placeholder="Username"
-          placeholderTextColor="white"
+          placeholderTextColor="#4169e1"
         />
       </View>
 
@@ -23,7 +23,7 @@ const LoginScreen = ({ navigation }) => {
         <TextInput
           style={styles.input}
           placeholder="Password"
-          placeholderTextColor="white"
+          placeholderTextColor="#4169e1"
         />
       </View>
 
@@ -65,6 +65,12 @@ const styles = StyleSheet.create({
     height: 40,
     marginBottom: 20,
     alignItems: "center",
+  },
+
+  input: {
+    height: 50,
+    flex: 1,
+    padding: 10,
   },
 
   loginButton: {
