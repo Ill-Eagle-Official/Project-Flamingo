@@ -33,12 +33,16 @@ const LoginScreen = ({ navigation }) => {
       >
         <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.signupButton}
-        onPress={() => console.log("Signup button pressed")}
-      >
-        <Text style={styles.signupText}>Signup</Text>
-      </TouchableOpacity>
+
+      <View style={styles.signupArea}>
+        <Text style={styles.signupText}>Don't have an account?</Text>
+        <TouchableOpacity
+          style={styles.signupButton}
+          onPress={() => console.log("Signup button pressed")}
+        >
+          <Text style={styles.signupText}>Signup</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -55,13 +59,13 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     color: "white",
-    marginBottom: 20,
+    marginBottom: 30,
   },
 
   inputView: {
     backgroundColor: "white",
     borderRadius: 10,
-    width: "70%",
+    width: "75%",
     height: 40,
     marginBottom: 20,
     alignItems: "center",
@@ -87,6 +91,18 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     color: "#4169e1",
+  },
+
+  signupArea: {
+    marginTop: 50,
+    alignItems: "center",
+  },
+
+  signupText: {
+    fontSize: 15,
+    fontWeight: "bold",
+    color: "white",
+    padding: 10,
   },
 
   signupButton: {
