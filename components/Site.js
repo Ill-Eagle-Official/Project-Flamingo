@@ -9,16 +9,16 @@ import {
 } from "react-native";
 
 const SiteScreen = ({ navigation }, props) => {
-
   return (
-
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to {props.name}</Text>
-      <Text style={styles.subtitle}>Here is a list of the birds at this site.</Text>
+      <Text style={styles.subtitle}>
+        Here is a list of the birds at this site.
+      </Text>
 
       <ScrollView style={styles.scrollView}>
-        
-
-  )
-
-}
+        {/* this will be a list of the birds. separate component required */}
+      </ScrollView>
+    </View>
+  );
+};
