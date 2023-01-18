@@ -6,8 +6,15 @@ import {
   TouchableOpacity,
   TextInput,
 } from "react-native";
+import { useRoute, useNavigation } from "@react-navigation/native";
+
+const navigation = useNavigation();
 
 const LoginScreen = ({ navigation }) => {
+  let navigateToHome = () => {
+    navigation.navigate("Home");
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Flamingo!</Text>
@@ -29,7 +36,7 @@ const LoginScreen = ({ navigation }) => {
 
       <TouchableOpacity
         style={styles.loginButton}
-        onPress={() => console.log("Login button pressed")}
+        onPress={() => navigateToHome()}
       >
         <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
